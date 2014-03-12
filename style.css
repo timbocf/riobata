@@ -1,0 +1,349 @@
+/*
+Theme Name: REI
+Theme URI: http://riobataenterprise.com/wp-content/themes/rei/
+Description: This is a rip off of the WP twentyten theme.
+Author: Tim Rodgers
+Version: 1.0
+License: GNU/GPL Version 2 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+html, body, div, span, a, a:link, a:visited, table, tr, td {
+	margin:0;
+	border:0;
+	padding:0;
+}
+ol, ul {
+	list-style: none;
+}
+a, a:link, a:visited {
+	text-decoration:none;
+	color:inherit;
+	border:none;
+	outline:none;
+}
+a img {
+	border:0;
+}
+.clear {
+	clear:both;
+}
+ul li {
+	list-style-image: url('images/dash.gif');
+	text-decoration: none;
+}
+h1 {
+	font-family: 'Economica', sans-serif;
+	font-weight:bold;
+	font-size:28px;
+	text-transform: uppercase;
+	margin-bottom:0;
+	margin-left: 5px;
+}
+h2 {
+	text-decoration:underline;
+	font-size:16px;
+}
+
+/* =Layout
+-------------------------------------------------------------- */
+
+/*
+LAYOUT: Two columns
+DESCRIPTION: Two-column fixed layout with one sidebar right of content
+*/
+
+#container {
+	float: left;
+	/*margin: 0 -240px 0 0;*/
+	margin:100px auto 0;
+	width:900px;
+	/*height: auto !important;*/
+	height: 100%;
+	min-height: 400px;
+	background:#fff;
+	padding:30px;
+	position:relative;
+}
+#content {
+	margin: 0 280px 0 20px;
+}
+#primary,
+#secondary {
+	float: right;
+	overflow: hidden;
+	width: 220px;
+}
+#secondary {
+	clear: right;
+}
+#footer {
+	clear: both;
+	width: 100%;
+}
+
+/*
+LAYOUT: One column, no sidebar
+DESCRIPTION: One centered column with no sidebar
+*/
+
+.one-column #content {
+	margin: 0 auto;
+	width: 640px;
+}
+
+/*
+LAYOUT: Full width, no sidebar
+DESCRIPTION: Full width content with no sidebar; used for attachment pages
+*/
+
+.single-attachment #content {
+	margin: 0 auto;
+	width: 900px;
+}
+
+
+/* =Fonts
+-------------------------------------------------------------- */
+body,
+input,
+textarea,
+.page-title span,
+.pingback a.url {
+	font-family: Georgia, "Bitstream Charter", serif;
+}
+h3#comments-title,
+h3#reply-title,
+#access .menu,
+#access div.menu ul,
+#cancel-comment-reply-link,
+.form-allowed-tags,
+#site-info,
+#site-title,
+#wp-calendar,
+.comment-meta,
+.comment-body tr th,
+.comment-body thead th,
+.entry-content label,
+.entry-content tr th,
+.entry-content thead th,
+.entry-meta,
+.entry-title,
+.entry-utility,
+#respond label,
+.navigation,
+.page-title,
+.pingback p,
+.reply,
+.widget-title,
+.wp-caption-text {
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+input[type=submit] {
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+code {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+
+/* =Structure
+-------------------------------------------------------------- */
+.headline {
+	border-bottom: 5px solid #5a75a4;
+	width: 500px;
+	height: 10px;
+}
+html, body {
+	background-color:#fff;
+	background: url(images/bg_slice.gif) repeat-x;
+	font-family:Arial, sans-serif;
+}
+#wrapper {
+	width:960px;
+	margin:0 auto;
+}
+#header img#logo {
+	margin-top:20px;
+	margin-left:50px;
+	float:left;
+}
+#site-title {
+	float:left;
+	margin-left:50px;
+}
+.menu {
+	float:right;
+	margin-top:70px;
+	/*margin-right:50px;*/
+}
+.menu ul li {
+	display:inline;
+	margin:0 20px;
+	font-size:20px;
+	color:#2da079;
+	text-transform:lowercase;
+}
+#header_email_phone {
+	font-size:18px;
+	color: #735605;
+	margin-top: 20px;
+	float:right;
+}
+
+.email {
+	margin-right: 20px;
+}
+#tabs {
+	height:50px;
+	/*margin-top:-100px;*/
+	position:absolute;
+	top:-70px;
+}
+#tabs ul li {
+	list-style-image:none;
+	list-style-type:none;
+	display:block;
+	float:left;	
+	margin-right:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-style:italic;
+	padding:10px 10px 10px 10px;
+	text-align:center;
+}
+#tabs ul li.active {
+	height:52px;
+	background:#fff;
+	margin-top:-10px;
+	color:#067c54;
+	padding-top:20px;
+}
+#tabs ul li.active a {
+	margin-top:-10px;
+}
+#tabs ul li, #tabs ul li.inactive {
+	height:34px;
+	background:#8c4f08;
+	color:#fff;
+}
+#tabs ul li a {
+	height:40px;
+	display:block;
+}
+#leftcol {
+	width:500px;
+	background:#fff;
+	float:left;
+	margin-top:50px;
+}
+#rightcol {
+	width:50px;
+	float:right;
+	margin-top:50px;
+	margin-left:40px;
+}
+.sliders {
+	border:2px solid #CCC;
+	width:320px;
+	height:200px;
+}
+#subleftcol {
+	width:300px;
+	float:left;
+	/*padding: 100px 0 0 0;*/
+}
+#subleftcol img {
+	border: 3px solid #8d8686;
+	box-shadow: 3px 5px 5px #CCC;
+}
+#subrightcol {
+	margin-left:300px;
+}
+.svclist {
+	margin-left:30px;
+	width:500px;
+}
+
+/* CONTACT FORM */
+#contactForm, .contactForm {
+	margin-top:20px;
+	display:block;
+	position:relative;
+	width:470px;
+}
+.ufo-cell-left {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color: #3c3d3e;
+	font-weight:bold;
+}
+.ufo-customfields-required-suffix {
+	margin-left:5px;
+}
+.text {
+	background:#e7e6e6;
+	border:1px solid #b6b7b7;
+	box-shadow: inset 1px 1px 1px 1px #d2d3d3;
+	border-radius: 2px;
+	padding: 10px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.button {
+	position:absolute;
+	right:0;
+	cursor:pointer;
+	background:url(images/submit_btn.gif) no-repeat;
+	width:125px;
+	height:35px;
+	display:block;
+	border:0;
+}
+/* END CONTACT FORM */
+
+/* FOOTER */
+#footerwrap {
+	width:100%;
+	height:200px;
+	background: #29a267;
+}
+#customfooter {
+	width:100%;
+	margin:50px auto;
+}
+#customfooter, .push {
+	clear:both;
+	height: 200px;
+}
+
+#footerMenu {
+	float:left;
+	/*margin-top:58px;*/
+}
+#footerMenu ul li {
+	display:block;
+	float:left;
+	color:#18392e;
+	font-size:20px;
+	/*padding-right: 50px;*/
+}
+#footer_email_phone {
+	color: #eedaa3;
+	font-size:18px;
+	float:right;
+	margin-top:87px;
+	margin-right:40px;
+}
+#loginBox {
+	position:absolute;
+	width:60px;
+	height:20px;
+	top:0;
+	right:0;
+	display:block;
+	padding-left:20px;
+}
+/* END FOOTER */
